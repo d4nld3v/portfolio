@@ -7,6 +7,9 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
+          "standalone": true,
+          "skipTests": true,
+          "changeDetection": "OnPush",
           "style": "scss"
         }
       },
