@@ -1,0 +1,44 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 70vh;
+  padding: 160px 40px 60px;
+
+  .title {
+    font-size: 90px;
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+
+  h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0;
+  }
+}
+
+.separator-container {
+  padding: 0 40px;
+
+  .separator {
+    border-bottom: 2px solid #fff;
+  }
+}
+
+.introduction {
+  padding: 60px 40px 0 40px;
+  display: flex;
+  justify-content: space-between;
+
+  .description {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .description-right {
+    text-align: right;
+  }
+}
