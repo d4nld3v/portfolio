@@ -20,21 +20,13 @@
   }
 }
 
-.separator-container {
-  padding: 0 40px;
-
-  .separator {
-    border-bottom: 2px solid #fff;
-  }
-}
-
 .introduction {
   padding: 60px 40px 0 40px;
   display: flex;
   justify-content: space-between;
 
   .description {
-    font-size: 20px;
+    font-size: $font-size-h5;
     font-weight: 500;
   }
 

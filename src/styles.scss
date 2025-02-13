@@ -53,37 +53,10 @@ body {
   background-color: rgb(10, 10, 12);
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
+.separator-container {
+  padding: 0 40px;
 
-.container-fluid {
-  width: 100%;
-  padding: 0 1rem;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -1rem;
-
-  @each $name, $size in $breakpoints {
-    @for $i from 1 through 12 {
-      @if $name ==xs {
-        .col-#{$i} {
-          flex: 0 0 #{100% / 12 * $i};
-          max-width: #{100% / 12 * $i};
-        }
-      } @else {
-        @media (min-width: #{$size}) {
-          .col-#{$name}-#{$i} {
-            flex: 0 0 #{100% / 12 * $i};
-            max-width: #{100% / 12 * $i};
-          }
-        }
-      }
-    }
+  .separator {
+    border-bottom: 2px solid #fff;
   }
 }
