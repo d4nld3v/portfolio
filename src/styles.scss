@@ -1,24 +1,7 @@
-$orange: #f97316; // color principal
-$orange-50: #fff7ed;
-$orange-100: #ffedd5;
-$orange-200: #fed7aa;
-$orange-300: #fdba74;
-$orange-400: #fb923c;
-$orange-500: #ea580c;
-
-$orange-gradient: linear-gradient(
-  90deg,
-  $orange-50,
-  $orange-100,
-  $orange-200,
-  $orange-300,
-  $orange-400,
-  $orange-500
-);
-
 $black: #1f2937; // para titulos
 $black-gray: #374151; // para texto base
 $black-muted: #4b5563; // para texto secundario
+$white: #fff;
 
 $box-shadow-default: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
   rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
@@ -37,7 +20,6 @@ $font-size-sm: 0.875rem; // 14px
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 $font-family: "Inter", sans-serif;
-
 $breakpoints: (
   xs: 0,
   sm: 425px,
@@ -49,14 +31,6 @@ $breakpoints: (
 body {
   font-family: $font-family;
   font-size: $font-size-base;
-  color: #fff;
-  background-color: rgb(10, 10, 12);
-}
-
-.separator-container {
-  padding: 0 40px;
-
-  .separator {
-    border-bottom: 2px solid #fff;
-  }
+  color: $black;
+  background-color: $white;
 }
