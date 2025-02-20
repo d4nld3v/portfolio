@@ -8,3 +8,37 @@ body {
   color: $black;
   background-color: $white;
 }
+
+h1,
+h2,
+h3 {
+  font-family: $font-family;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 45px;
+  letter-spacing: 3px;
+  line-height: 50px;
+}
+
+.d-block {
+  display: block;
+}
+
+.highlight {
+  font-weight: 500;
+  color: $color-primary;
+  letter-spacing: 3px;
+}
+
+header p {
+  font-size: 32px;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+
+  .highlight {
+    text-transform: uppercase;
+  }
+}

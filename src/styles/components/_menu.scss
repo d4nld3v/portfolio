@@ -1,7 +1,29 @@
+@use "../variables" as *;
+
 .menu {
+  padding-left: 32px;
+  border-left: 2px solid $gray-light;
+
   .menu__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
   }
 
   .menu__item {
+    text-transform: uppercase;
+    font-weight: 400;
+
+    a {
+      color: $black-muted;
+      letter-spacing: 1.5px;
+
+      &:hover {
+        color: $color-primary;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
+      }
+    }
   }
 }
