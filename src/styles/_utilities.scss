@@ -6,6 +6,10 @@
   display: flex !important;
 }
 
+.justify-content-center {
+  justify-content: center !important;
+}
+
 .gap-8 {
   gap: 8px !important;
 }
@@ -36,6 +40,10 @@
 .mt-8 {
   margin-top: 8px !important;
 }
+.mb-8 {
+  margin-bottom: 8px !important;
+}
+
 .mt-32 {
   margin-top: 32px !important;
 }
@@ -50,6 +58,9 @@
 
 .mt-80 {
   margin-top: 80px !important;
+}
+.mt-100 {
+  margin-top: 100px !important;
 }
 
 .mb-80 {
