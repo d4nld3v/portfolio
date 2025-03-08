@@ -1,4 +1,9 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  EventEmitter,
+  Output,
+} from '@angular/core';
 
 @Component({
   selector: 'app-services',
@@ -6,4 +11,10 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   templateUrl: './services.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ServicesComponent {}
+export class ServicesComponent {
+  @Output() scrollToRRSS = new EventEmitter<void>();
+
+  protected scrollToRRSSHandler() {
+    this.scrollToRRSS.emit();
+  }
+}

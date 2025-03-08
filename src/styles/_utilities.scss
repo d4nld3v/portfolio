@@ -5,9 +5,19 @@
 .d-flex {
   display: flex !important;
 }
+.flex-column {
+  flex-direction: column !important;
+}
 
 .justify-content-center {
   justify-content: center !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+.gap-4 {
+  gap: 4px !important;
 }
 
 .gap-8 {
@@ -24,6 +34,9 @@
 
 .gap-32 {
   gap: 32px !important;
+}
+.gap-48 {
+  gap: 48px !important;
 }
 
 .mb-16 {
