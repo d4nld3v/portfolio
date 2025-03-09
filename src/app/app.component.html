@@ -13,7 +13,11 @@
 </header>
 
 <main>
+  @defer {
   <app-about></app-about>
+  } @loading {
+  <div class="loading-placeholder">Cargando información...</div>
+  }
   <app-services (scrollToEmail)="scrollToEmail()"></app-services>
   <app-experience></app-experience>
   <app-contact #contactSection></app-contact>

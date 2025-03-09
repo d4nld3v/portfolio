@@ -66,9 +66,13 @@ header p {
 .section__title {
   font-family: $heading-family;
   font-style: italic;
-  font-size: 36px;
   margin-bottom: 24px;
   font-weight: 400;
+  font-size: 26px;
+
+  @media (min-width: 1024px) {
+    font-size: 36px;
+  }
 }
 
 .section__benefits {
