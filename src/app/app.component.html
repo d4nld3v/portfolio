@@ -1,12 +1,15 @@
 <header>
+  @defer {
   <div>
     <p>Hola, soy <span class="highlight">Daniel Enriquez</span></p>
     <h1>
       Desarrollador Fullstack <span class="d-block">& Consultor SEO</span>
     </h1>
   </div>
-
   <app-menu></app-menu>
+  } @loading {
+  <div class="menu-placeholder">Cargando menú...</div>
+  }
 </header>
 
 <main>
@@ -15,23 +18,25 @@
   <app-experience></app-experience>
   <app-contact #contactSection></app-contact>
   <app-floating-info></app-floating-info>
+
+  <footer>
+    <div class="attribution">
+      <a
+        href="https://www.flaticon.es/iconos-gratis/desarrollador"
+        title="desarrollador iconos"
+        >Desarrollador iconos creados por HideMaru - Flaticon</a
+      >
+      <a
+        href="https://www.flaticon.es/iconos-gratis/grafico"
+        title="gráfico iconos"
+        >Gráfico iconos creados por Freepik - Flaticon</a
+      >
+      <a
+        target="_blank"
+        href="https://icons8.com/icon/117562/microsoft-outlook-2019"
+        >Microsoft Outlook 2019 icono de</a
+      >
+      <a target="_blank" href="https://icons8.com">Icons8</a>
+    </div>
+  </footer>
 </main>
-<footer>
-  <a
-    href="https://www.flaticon.es/iconos-gratis/desarrollador"
-    title="desarrollador iconos"
-    >Desarrollador iconos creados por HideMaru - Flaticon</a
-  ><a
-    href="https://www.flaticon.es/iconos-gratis/grafico"
-    title="gráfico iconos"
-    >Gráfico iconos creados por Freepik - Flaticon</a
-  >
-  <div>
-    <a
-      target="_blank"
-      href="https://icons8.com/icon/117562/microsoft-outlook-2019"
-      >Microsoft Outlook 2019 icono de
-    </a>
-    <a target="_blank" href="https://icons8.com">Icons8</a>
-  </div>
-</footer>

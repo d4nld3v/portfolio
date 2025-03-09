@@ -1,4 +1,5 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MenuComponent } from '@app/menu/menu.component';
 import { ExperienceComponent } from '@app/experience/experience.component';
 import { ServicesComponent } from '@app/services/services.component';
@@ -10,6 +11,7 @@ import { FloatingInfoComponent } from '@app/floating-info/floating-info.componen
   selector: 'app-root',
   standalone: true,
   imports: [
+    CommonModule,
     MenuComponent,
     ExperienceComponent,
     ServicesComponent,
