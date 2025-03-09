@@ -14,10 +14,14 @@ h1 {
   font-family: $heading-family;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 32px;
   letter-spacing: 3px;
-  line-height: 50px;
+
   font-style: italic;
+  @media (min-width: 768px) {
+    font-size: 45px;
+    line-height: 50px;
+  }
 }
 
 h2 {
@@ -30,7 +34,11 @@ h2 {
   letter-spacing: 3px;
   font-weight: 400;
   color: $black-muted;
-  margin-bottom: 56px;
+  margin-bottom: 24px;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 56px;
+  }
 
   .line-decoration {
     display: block;
@@ -64,8 +72,11 @@ header p {
 }
 
 .section__benefits {
-  display: flex;
   margin-top: 32px;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
 
   .benefits__item {
     border-left: 1px solid $gray-light;
@@ -74,17 +85,18 @@ header p {
     flex: 1;
     font-size: 18px;
 
-    &:first-child {
-      border-left: none;
-      padding-left: 0;
-    }
-
     .benefits__title {
       display: block;
       font-size: 36px;
       color: $color-primary;
       font-family: $heading-family;
       font-weight: 500;
+    }
+    @media (min-width: 768px) {
+      &:first-child {
+        border-left: none;
+        padding-left: 0;
+      }
     }
   }
 }
@@ -136,7 +148,10 @@ header p {
   backdrop-filter: blur(10px);
 }
 
-button {
+button,
+.btn {
+  display: flex;
+  width: max-content;
   padding: 8px 16px;
   border: none;
   border-radius: 8px;
@@ -160,32 +175,9 @@ button {
   gap: 56px;
   position: relative;
   margin-top: 40px;
-  padding: 32px 32px 32px 100px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50px;
-    width: 2px;
-    height: 100%;
-    background-color: $gray-light;
-    border-radius: 1px;
-  }
 
   .timeline__item {
-    padding: 0 0 0 24px;
     position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 32px;
-      height: 32px;
-      background-color: $color-primary;
-      border-radius: 50%;
-      left: -64px;
-    }
 
     .timeline__item__name {
       font-family: $font-family;
@@ -211,12 +203,42 @@ button {
       font-weight: 400;
     }
   }
+
+  @media (min-width: 768px) {
+    padding: 32px 32px 32px 100px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50px;
+      width: 2px;
+      height: 100%;
+      background-color: $gray-light;
+      border-radius: 1px;
+    }
+
+    .timeline__item {
+      padding: 0 0 0 24px;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        background-color: $color-primary;
+        border-radius: 50%;
+        left: -64px;
+      }
+    }
+  }
 }
 .services__container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 1fr));
   gap: 32px;
-  margin-top: 56px;
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
 
   .services__item {
     display: flex;
@@ -288,7 +310,9 @@ button {
       font-size: 20px;
 
       strong {
-        margin-left: 24px;
+        @media (min-width: 768px) {
+          margin-left: 24px;
+        }
       }
 
       &::marker {
@@ -299,7 +323,9 @@ button {
     p {
       margin-top: 16px;
       font-size: 18px;
-      padding-left: 47px;
+      @media (min-width: 768px) {
+        padding-left: 47px;
+      }
     }
     a {
       color: $color-primary;
@@ -317,4 +343,18 @@ footer {
   gap: 8px;
   align-items: center;
   font-size: 14px;
+}
+.box-rrss {
+  li {
+    padding: 4px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    a {
+      &:focus,
+      &:focus-visible {
+        outline: 1px dashed $black;
+      }
+    }
+  }
 }

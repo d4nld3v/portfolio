@@ -12,9 +12,9 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ServicesComponent {
-  @Output() scrollToRRSS = new EventEmitter<void>();
+  @Output() scrollToEmail = new EventEmitter<void>();
 
-  protected scrollToRRSSHandler() {
-    this.scrollToRRSS.emit();
+  protected scrollToEmailHandler() {
+    this.scrollToEmail.emit();
   }
 }

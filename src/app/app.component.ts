@@ -22,9 +22,12 @@ import { FloatingInfoComponent } from '@app/floating-info/floating-info.componen
 export class AppComponent {
   title = 'portfolio';
 
-  @ViewChild('rrss') rrss!: ElementRef;
+  @ViewChild('contactSection', { static: true, read: ElementRef })
+  contacSection!: ElementRef;
 
-  protected scrollToRRSS() {
-    this.rrss.nativeElement.scrollIntoView({ behavior: 'smooth' });
+  protected scrollToEmail(): void {
+    if (this.contacSection) {
+      this.contacSection.nativeElement.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }

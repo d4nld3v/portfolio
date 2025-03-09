@@ -5,6 +5,9 @@
 .d-flex {
   display: flex !important;
 }
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
 .flex-column {
   flex-direction: column !important;
 }
@@ -50,6 +53,10 @@
   margin-bottom: 48px !important;
 }
 
+.mt-4 {
+  margin-top: 4px !important;
+}
+
 .mt-8 {
   margin-top: 8px !important;
 }
@@ -78,4 +85,13 @@
 
 .mb-80 {
   margin-bottom: 80px !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }

@@ -86,7 +86,11 @@ main {
   width: 100%;
   max-width: 1220px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 16px;
+
+  @media (min-width: 768px) {
+    padding: 0 24px;
+  }
 }
 
 /* Add focus styles for buttons and links */
@@ -99,8 +103,14 @@ a:focus {
 
 header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   margin-top: 48px;
   margin-bottom: 76px;
+  gap: 24px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
